@@ -18,3 +18,28 @@ sqrt(2)
   sqrt(1e-20)
     sqrt(1029384756)
 }
+
+
+
+import breeze.linalg._
+val v = DenseVector(1.0, 2.0, 3.0)
+
+//element wise multiplication
+
+v :* 2.0
+
+// Element wise addition
+v :+ DenseVector(4.0, 5.0, 6.0)
+
+val v2 = DenseVector(4.0, 5.0, 6.0)
+
+// dot product
+v dot v2
+
+// regular - and +
+v + v2
+v - v2
+// :*/ :+ have less precedence than +/-
+2.0 :* v + v2
+2.0 :* v :+ v2
+

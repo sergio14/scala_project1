@@ -100,3 +100,14 @@ val a=b.toArray
 
 print(a)
 print(a.toBuffer)
+
+// transversing an array
+for (i <- 0 until a.length)
+  println( i + " :" +   a(i))
+
+a(2)
+
+
+///breeze
+
+import breeze.linalg._
