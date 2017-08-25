@@ -1,1 +1,1 @@
-# scala_project1
+# scala_project1 _training
